@@ -1,16 +1,14 @@
 namespace LabPolymorphism;
 
-public class Artifact
+abstract class Artifact
 {
-    private int id;
+    public int Id{ get; set; }
 
-    public Artifact(int id)
+   public  Artifact(int id)
     {
-        this.id = id;
+        Id=id;
     }
 
-    public void Identify()
-    {
-        Console.WriteLine($"[Artifact ID: {id}] Це невідомий стародавній предмет.");
-    }
+    public abstract void Identify();
+
 }

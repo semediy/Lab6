@@ -1,12 +1,11 @@
 namespace LabPolymorphism;
 
-public class AncientSword : Artifact
+class AncientSword : Artifact
 {
-    public AncientSword(int id) : base(id)
-    {
-    }
+    public AncientSword(int id) : base(id){}
+    
 
-    public new void Identify()
+    public override void Identify()
     {
         Console.WriteLine("[Ancient Sword] Це заіржавілий меч короля.");
     }
